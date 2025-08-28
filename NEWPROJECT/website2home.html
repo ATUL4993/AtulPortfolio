@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Rooms</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Open Sans', sans-serif;
+            background: #fff;
+            color: #111;
+        }
+
+        .rooms-section {
+            padding: 60px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+
+        .subtitle {
+            color: #0ea5e9;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            flex: 1 1 100%;
+        }
+
+        .title-and-desc {
+            max-width: 100%;
+            display: flex;
+        }
+
+        .top {
+            font-size: 1.5rem;
+            color: skyblue;
+        }
+
+        .title-and-desc h2 {
+            width: 100%;
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            margin-bottom: 0px;
+            margin-top: 93px;
+        }
+
+        .title-and-desc p {
+            padding-top: 86px;
+            margin-top: 57px;
+            margin-bottom: 0;
+            padding-left: 242px;
+            font-size: 0.9rem;
+            color:darkgray;
+            line-height: 1.6;
+        }
+
+        .rooms-grid {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .room-card {
+            flex: 1 1 30%;
+            min-width: 280px;
+            height: 450px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .room-info {
+            position: absolute;
+            bottom: 0;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+            color: #fff;
+            padding: 20px;
+            width: 100%;
+        }
+
+        .room-info h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            margin: 0;
+        }
+
+        .room-info p {
+            margin: 5px 0;
+            font-size: 0.95rem;
+        }
+
+        .price {
+            font-size: 1.4rem;
+            font-weight: bold;
+            display: block;
+            margin-top: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .rooms-grid {
+                flex-direction: column;
+            }
+
+            .room-card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="rooms-section">
+        <div class="container">
+            <div class="section-header">
+
+                <div class="title-and-desc">
+                    <h2> <span class="top">ROOMS</span> <br>
+                        Our Rooms</h2>
+                    <p>Our rooms offer a harmonious blend of comfort and elegance, designed to provide an exceptional
+                        stay for every guest. Each room features plush bedding, high-quality linens, and a selection of
+                        pillows to ensure a restful night’s sleep.</p>
+                </div>
+            </div>
+            <div class="rooms-grid">
+                <!-- Room Card -->
+                <div class="room-card"
+                    style="background-image: url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85');">
+                    <div class="room-info">
+                        <h3>Presidential Suite</h3>
+                        <p>35 Feets Size ・ 2 Guests</p>
+                        <span class="price">$499</span>
+                    </div>
+                </div>
+                <div class="room-card"
+                    style="background-image: url('https://images.unsplash.com/photo-1542314831-068cd1dbfeeb');">
+                    <div class="room-info">
+                        <h3>Metropolitan Suite</h3>
+                        <p>35 Feets Size ・ 2 Guests</p>
+                        <span class="price">$599</span>
+                    </div>
+                </div>
+                <div class="room-card"
+                    style="background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c');">
+                    <div class="room-info">
+                        <h3>Premier Deluxe Room</h3>
+                        <p>35 Feets Size ・ 2 Guests</p>
+                        <span class="price">$399</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

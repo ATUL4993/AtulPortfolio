@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moonlit Hotel</title>
+    <style>
+        /* Reset and base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body,
+        html {
+            font-family: 'Segoe UI', sans-serif;
+            height: 100%;
+            color: #333;
+        }
+
+        /* Navbar */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            /* Transparent */
+            backdrop-filter: blur(10px);
+            /* Optional frosted effect */
+            z-index: 1000;
+            padding: 20px 40px;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            min-height: 70vh;
+            margin-top: 180px;
+            /* Space for navbar */
+        }
+
+        .image-side {
+            flex: 1;
+            background: url('images/beaach2.avif') center center/cover no-repeat fixed;
+            height:400px;
+        }
+
+        .text-side {
+            flex: 1;
+            padding: 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .text-side h4 {
+            color: #017b8c;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .text-side h1 {
+            font-size: 48px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .text-side p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .signature {
+            font-family: 'Brush Script MT', cursive;
+            font-size: 36px;
+            color: #a67c52;
+            margin-top: 30px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+            }
+
+            .image-side {
+                height: 300px;
+                background-attachment: scroll;
+            }
+
+            .text-side {
+                padding: 30px 20px;
+            }
+
+            .text-side h1 {
+                font-size: 32px;
+            }
+
+            .nav-links {
+                gap: 15px;
+            }
+
+            .nav-links a {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Moonlit</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Rooms</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="image-side"></div>
+        <div class="text-side">
+            <h4>About Us</h4>
+            <h1>Welcome To Our<br>Moonlit Hotel & Resort</h1>
+            <p>
+                Welcome to Bokinn, where luxury meets comfort in the heart of Canada.
+                Since 1999, we have been dedicated to providing an exceptional stay for
+                our guests, blending modern amenities with timeless elegance. Our
+                beautifully designed rooms and suites offer stunning views and plush
+                accommodations, ensuring a restful retreat whether you're here for
+                business or leisure.
+            </p>
+            <div class="signature">Cay</div>
+        </div>
+    </section>
+</body>
+
+</html>
